@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "448ac402917b9895d2e19f48bca4ba53",
+    "revision": "04f687d84f1687ce787da2cc5ac4986e",
     "url": "/sn-markdown-with-vim/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sn-markdown-with-vim/static/css/2.0ede6d05.chunk.css"
   },
   {
-    "revision": "9ee60694b1c3e8036f3f",
+    "revision": "b6c94abdcd25df9305fc",
     "url": "/sn-markdown-with-vim/static/css/main.1ec21763.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sn-markdown-with-vim/static/js/2.d7198492.chunk.js"
   },
   {
-    "revision": "9ee60694b1c3e8036f3f",
-    "url": "/sn-markdown-with-vim/static/js/main.e45665c0.chunk.js"
+    "revision": "b6c94abdcd25df9305fc",
+    "url": "/sn-markdown-with-vim/static/js/main.afc4f742.chunk.js"
   },
   {
     "revision": "95eb0112b366ef900ea9",
