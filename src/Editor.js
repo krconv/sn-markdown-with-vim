@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Controlled as CodeMirror } from "react-codemirror2";
 
-import StandardNotes from "./StandardNotes";
-
 import "codemirror/mode/markdown/markdown";
 import "codemirror/keymap/vim";
 import "codemirror/lib/codemirror.css";
+
+import StandardNotes from "./StandardNotes";
+import "./Editor.scss";
 
 function Editor() {
   const [noteContent, setNoteContent] = useState(null);
@@ -41,7 +42,7 @@ function Editor() {
   }, [noteContent, dirty]);
 
   return (
-    <div style={{ padding: "16px" }}>
+    <React.Fragment>
       {loading ? (
         "LOADING"
       ) : (
@@ -62,7 +63,7 @@ function Editor() {
       )}
       Dirty: {JSON.stringify(dirty)}
       Editing: {JSON.stringify(editing)}
-    </div>
+    </React.Fragment>
   );
 }
 
