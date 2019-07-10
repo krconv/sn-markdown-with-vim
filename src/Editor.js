@@ -61,8 +61,6 @@ function Editor() {
           }}
         />
       )}
-      Dirty: {JSON.stringify(dirty)}
-      Editing: {JSON.stringify(editing)}
     </React.Fragment>
   );
 }
