@@ -29,12 +29,6 @@ class StandardNotes {
     );
   }
 
-  saveNote(note) {
-    return new Promise(resolve => {
-      this.componentManager.saveItem(note, resolve);
-    });
-  }
-
   saveNoteContent(content) {
     return new Promise(resolve => {
       const note = this.noteUpdates.getValue();

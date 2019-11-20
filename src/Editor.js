@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Controlled as CodeMirror } from "react-codemirror2";
 
-import "codemirror/mode/markdown/markdown";
 import "codemirror/keymap/vim";
+import "codemirror/mode/gfm/gfm";
 import "codemirror/lib/codemirror.css";
 
 import StandardNotes from "./StandardNotes";
@@ -52,7 +52,7 @@ function Editor() {
             editor.refresh();
           }}
           options={{
-            mode: "markdown",
+            mode: "gfm",
             keyMap: "vim"
           }}
           onBeforeChange={(editor, data, value) => {
