@@ -1,9 +1,119 @@
-.react-codemirror2 {
-  min-height: 100vh;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css?family=Exo+2|Ubuntu+Mono&display=swap");
+html {
+  font-size: 14px;
+}
 
-  .CodeMirror {
-    width: 100%;
-    min-height: 100vh;
+.CodeMirror {
+  background-color: #20202b !important;
+  width: 100%;
+  min-height: 100vh;
+  border: 0 !important;
+
+  .CodeMirror-line {
+    color: #d8d8d8 !important;
+    font-family: "Exo 2", sans-serif !important;
   }
+
+  .CodeMirror-gutters {
+    background-color: #20202b !important;
+    color: #d8d8d8 !important;
+    border: none !important;
+
+    .CodeMirror-foldgutter {
+      margin: 0 8px;
+    }
+  }
+
+  .CodeMirror-code .cm-comment {
+    background: #313142 !important;
+    color: #086dd6 !important;
+    font-family: "Ubuntu Mono", monospace;
+
+    &.CodeMirror-selectedtext {
+      color: white !important;
+      background: #086dd6 !important;
+    }
+  }
+
+  .cm-formatting-list {
+    font-family: "Exo 2", sans-serif !important;
+  }
+
+  .cm-hmd-list-indent {
+    border: none !important;
+  }
+
+  .cm-formatting-task {
+    color: white !important;
+    background: none !important;
+  }
+  .CodeMirror-line {
+    span.hmd-hidden-token.cm-formatting-task {
+      color: white !important;
+    }
+  }
+
+  .cm-header {
+    font-family: "Exo 2", sans-serif !important;
+    color: #d8d8d8 !important;
+
+    &.CodeMirror-selectedtext {
+      color: white !important;
+      background: #086dd6 !important;
+    }
+  }
+
+  // Faded Markdown syntax
+  .cm-formatting-header,
+  .cm-formatting-strong,
+  .cm-formatting-em {
+    opacity: 0.2;
+  }
+
+  .cm-variable-2 {
+    color: #086dd6 !important;
+
+    &.CodeMirror-selectedtext {
+      color: white !important;
+      background: transparent;
+    }
+  }
+
+  .cm-link,
+  .cm-string,
+  .cm-keyword {
+    color: #086dd6 !important;
+
+    &.CodeMirror-selectedtext {
+      color: white !important;
+      background: #086dd6 !important;
+    }
+  }
+
+  .CodeMirror-linenumber {
+    color: gray !important;
+  }
+}
+
+.CodeMirror-cursor {
+  border-color: #d8d8d8 !important;
+}
+
+.CodeMirror-selected {
+  background: #086dd6 !important;
+}
+
+.CodeMirror-selectedtext {
+  color: white !important;
+  background: #086dd6 !important;
+}
+
+.cm-fat-cursor .CodeMirror-cursor {
+  border: 0 !important;
+  background: #086dd6 !important;
+}
+
+.CodeMirror .cm-quote {
+  color: #d8d8d8 !important;
+  opacity: 0.6;
 }

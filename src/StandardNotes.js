@@ -29,12 +29,18 @@ class StandardNotes {
     );
   }
 
-  saveNoteContent(content) {
-    return new Promise(resolve => {
-      const note = this.noteUpdates.getValue();
+  saveNoteContent(content, getValue) {
+    const note = this.noteUpdates.getValue();
+    if (note) {
       note.content.text = content;
-      this.componentManager.saveItem(note, resolve);
-    });
+      this.componentManager.saveItemWithPresave(note, () => {
+        note.content.text = getValue();
+      });
+    }
+  }
+
+  isMobileDevice() {
+    return this.componentManager.isMobile;
   }
 }
 
