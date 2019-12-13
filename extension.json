@@ -1,0 +1,9 @@
+{
+  "identifier": "kodey.conve.rs.markdown-with-vim",
+  "name": "Markdown with Vim",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "version": "1.0.0",
+  "description": "A markdown editor with Vim bindings.",
+  "url": "https://krconv.github.io/sn-markdown-with-vim/"
+}
