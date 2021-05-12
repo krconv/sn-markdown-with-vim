@@ -4,7 +4,7 @@
   "homepage": "https://krconv.github.io/sn-markdown-with-vim",
   "private": true,
   "dependencies": {
-    "codemirror": "^5.49.2",
+    "codemirror": "^5.58.2",
     "hypermd": "^0.3.11",
     "react": "^16.8.6",
     "react-codemirror2": "^6.0.0",
